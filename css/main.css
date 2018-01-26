@@ -171,7 +171,7 @@ a {
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 30px;
     text-transform: uppercase; }
   .navigation .button {
@@ -210,9 +210,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  margin-left: -20px; }
+
+.features__item {
+  margin-left: 20px; }
 
 .feature {
   display: -webkit-box;
