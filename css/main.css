@@ -158,17 +158,17 @@ a { text-decoration: none; }
 
 .form__inner { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
-.form__right { margin-left: 20px; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid red; }
+.form__right { margin-left: 20px; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid red; }
 
-.form__left { width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid red; }
+.form__left { width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid red; }
 
-.form__row { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 15px; margin-left: -20px; }
+.form__row { display: -webkit-box; margin-bottom: 15px; margin-left: -20px; display: -ms-flexbox; display: flex; }
 
-.form__block { max-width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-left: 20px; }
+.form__block { display: block; margin-left: 20px; }
 
 .form__block--radio { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
 
-.form__input { height: 35px; border-radius: 5px; }
+.form__input { height: 35px; width: 100%; border-radius: 5px; }
 
 .section__title--form { color: #f9b43b; text-align: center; }
 
