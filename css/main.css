@@ -154,26 +154,43 @@ a { text-decoration: none; }
 
 .menu__text { padding: 60px 35px; min-width: 540px; }
 
-.form { background-image: url("../img/delivery/bg-form.jpg"); }
+/*.form{ background-image: url('../img/delivery/bg-form.jpg'); position: relative; &__inner{ width: 100%; display: flex; justify-content: center; //align-items: center; } &__right{ margin-left: 20px; width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; border: 2px solid red; } &__left{ width: 50%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; border: 2px solid red; } &__row{ display: -webkit-box; //width: 100%; margin-bottom: 15px; margin-left: -20px; display: flex; } &__block{ display: block; //flex-direction: column; margin-left: 20px; &--radio{ flex-direction: row; } } &__input{ height: 35px; width: 100%; border-radius: 5px; }    } .section__title--form{ color: $yellow-f; text-align: center; margin-bottom: 55px; } .container__form{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }*/
+.order { background-image: url("../img/delivery/bg-form.jpg"); position: relative; }
 
-.form__inner { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.form { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.form__right { margin-left: 20px; width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid red; }
+.form__left, .form__right { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.form__left { width: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 2px solid red; }
+.form__left { margin-right: 20px; }
 
-.form__row { display: -webkit-box; margin-bottom: 15px; margin-left: -20px; display: -ms-flexbox; display: flex; }
+.form__row { margin-bottom: 20px; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.form__block { display: block; margin-left: 20px; }
+.form__block { display: block; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 20px; }
 
-.form__block--radio { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+.form__block:last-child { margin-right: 0; }
 
-.form__input { height: 35px; width: 100%; border-radius: 5px; }
+.form__input, .form__textarea { padding: 10px; background: #fff; border: none; border-radius: 5px; width: 100%; }
 
-.section__title--form { color: #f9b43b; text-align: center; }
+.form__title { margin-bottom: 10px; }
+
+.form__reset { border: none; background: transparent; }
+
+.form__reset, .form__text, .form__title { font-family: 'Ubuntu', sans-serif; font-weight: 300; font-size: 14px; color: #fff; }
+
+.section__title-order { color: #f9b43b; text-align: center; margin-bottom: 55px; }
 
 .map { background-image: url("../img/map/bg-map.jpg"); position: relative; }
 
 .footer { position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background-color: #1f2122; }
+
+.asidebar__list { position: fixed; top: 85px; right: 50px; }
+
+.asidebar__item { margin-bottom: 20px; }
+
+.asidebar__link { display: -webkit-box; display: -ms-flexbox; display: flex; width: 20px; height: 20px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border: 1px solid transparent; border-radius: 50%; position: relative; }
+
+.asidebar__link:hover { border-color: #fff; }
+
+.asidebar__link:before { content: ""; width: 5px; height: 5px; display: block; border-radius: 50%; background: #ffffff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */
