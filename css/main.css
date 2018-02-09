@@ -49,7 +49,7 @@ a { text-decoration: none; }
 
 @media screen and (max-width: 768px) { .button { padding: 0.85714rem 1.07143rem; font-size: 0.85714rem; } }
 
-.welcome { background-image: url("../img/welcome/bg-first.jpg"); }
+.welcome { background-image: url("../img/welcome/bg-first.jpg"); position: relative; }
 
 .welcome__header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 0.625rem; }
 
@@ -116,6 +116,26 @@ a { text-decoration: none; }
 .section__title--orange { color: #f9b43b; }
 
 @media screen and (max-width: 768px) { .section__title--orange { text-align: center; } }
+
+.nav-overlay { width: 100%; height: 100vh; background: #2f3234; position: absolute; }
+
+.overlay__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.overlay__link { display: block; color: #fff; font-family: 'Ubuntu', sans-serif; font-size: 1.5rem; font-weight: 500; line-height: 2.5rem; text-transform: uppercase; margin-bottom: 1.875rem; }
+
+.overlay__item { display: block; text-align: center; }
+
+.item__drop { margin-bottom: 1.875rem; }
+
+.item__drop::after { display: inline-block; text-align: center; content: ''; width: 0.5625rem; height: 0.5625rem; border-radius: 0.28125rem; background-color: #fff; margin: 0 0.75rem; }
+
+.nav-overlay__header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 0.625rem; }
+
+@media screen and (max-width: 768px) { .nav-overlay__header { margin-bottom: 8.125rem; } }
+
+@media screen and (max-width: 480px) { .nav-overlay__header { margin-bottom: 0; } }
+
+.cross { width: 25px; height: 32px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 1.5625rem; }
 
 .best { background-image: url("../img/best/bg.jpg"); }
 
@@ -253,6 +273,8 @@ svg:not(:root) { overflow: hidden; }
 
 .slider__arrow--right { -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
+.reviews { position: relative; }
+
 .reviews__list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; }
 
 .reviews__item { width: 25%; height: 50%; }
@@ -287,6 +309,8 @@ svg:not(:root) { overflow: hidden; }
 
 .button_color_black:hover { background-color: #1f2122; }
 
+.button__read { display: none; }
+
 @media screen and (max-width: 768px) { .button__read { display: none; } }
 
 @media screen and (max-width: 480px) { .button__read { display: block; } }
@@ -294,6 +318,16 @@ svg:not(:root) { overflow: hidden; }
 @media screen and (max-width: 768px) { .button__more { display: block; } }
 
 @media screen and (max-width: 480px) { .button__more { display: none; } }
+
+.rev-overlay { width: 60%; background: #fff; border-radius: 0.4375rem; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.rev-overlay__content { padding: 1.375rem 1.4375rem; }
+
+.rev-overlay__title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 1.25rem; }
+
+.rev-overlay__text { font-family: 'Ubuntu', sans-serif; font-size: 0.875rem; font-weight: 300; line-height: 1.5rem; text-align: left; color: #2f3234; }
+
+.title__name { font-family: 'gagalin'; font-size: 0.875rem; font-weight: 400; line-height: 1.75rem; color: #2f3234; }
 
 .team { background-image: url("../img/team/bg-team.jpg"); background-size: cover; position: relative; }
 
