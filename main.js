@@ -15,7 +15,33 @@ overlayAdd.addEventListener("click", function(){
     telephoneMenu.style.opacity = "0.99";
 });
 
-// Reviews
+//  Slider
+const left = document.querySelector(".slider__arrow--left");
+const right = document.querySelector(".slider__arrow--right");
+const item = document.querySelector(".catalog")
+
+const minRight = 0;
+const maxRight = 400;
+const step = 100;
+let currentRight = 0;
+
+item.style.right = 0 + "%";
+
+right.addEventListener("click", function() {
+    if (currentRight < maxRight) {
+        currentRight += step;
+        item.style.right = currentRight + "%";
+    }
+})
+
+left.addEventListener("click", function() {
+    if (currentRight > minRight) {
+        currentRight -= step;
+        item.style.right = currentRight + "%";
+    }
+})
+
+//  Reviews
 const overlayClose = document.querySelector(".cross__exit");
 const telephoneBanner = document.querySelector(".rev-overlay");
 const overlayButton = document.querySelector(".button__read");
@@ -42,7 +68,7 @@ const menuClose = document.querySelectorAll(".menu-acco__link")
 menuItem[0].addEventListener("click",function(i) {
 menuAcc[0].classList.toggle("menu__item--active")
 });
-menuItem[1].addEventListener("click",function(i) {
+menuItem[1].addEventListener("click",function(i) {  
 menuAcc[1].classList.toggle("menu__item--active")
 });
 menuItem[2].addEventListener("click",function(i) {
