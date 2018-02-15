@@ -49,6 +49,7 @@ left.addEventListener("click", function() {
             event.preventDefault();
             const checked = event.target;
             const item = checked.parentNode;
+            //const list = item.parentNode;
             const items = acco.children;
             const content = checked.nextElementSibling;
             const contentHeight = content.firstElementChild.clientHeight;
