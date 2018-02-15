@@ -12,7 +12,7 @@
 <body>
     <div class="wrap">
         <div class="maincontent">
-            <section class="section welcome">
+            <section class="section welcome active">
                     <!--Меню для телефона-->
                     <div class="nav-overlay" style="z-index: 0; opacity: 0">
                         <div class="container">
@@ -27,27 +27,27 @@
                              
                             <ul class="overlay__list">
                                 <li class="overlay__item">
-                                    <a href="#" class="navigation__link">о нас</a>
+                                    <a href="" class="navigation__link" data-scroll="1">о нас</a>
                                     <div class="item__drop"></div>
                                 </li>
                                 <li class="overlay__item">
-                                    <a href="#" class="navigation__link">бургеры</a>
+                                    <a href="" class="navigation__link" data-scroll="2">бургеры</a>
                                     <div class="item__drop"></div>
                                 </li>
                                 <li class="overlay__item">
-                                    <a href="#" class="navigation__link">команда</a>
+                                    <a href="" class="navigation__link" data-scroll="3">команда</a>
                                     <div class="item__drop"></div>
                                 </li>
                                 <li class="overlay__item">
-                                    <a href="#" class="navigation__link">меню</a>
+                                    <a href="" class="navigation__link" data-scroll="4">меню</a>
                                     <div class="item__drop"></div>
                                 </li>
                                 <li class="overlay__item">
-                                    <a href="#" class="navigation__link">отзывы</a>
+                                    <a href="" class="navigation__link" data-scroll="5">отзывы</a>
                                     <div class="item__drop"></div>
                                 </li>
                                 <li class="overlay__item">
-                                    <a href="#" class="navigation__link">контакты</a>
+                                    <a href="" class="navigation__link" data-scroll="7">контакты</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,25 +61,25 @@
                         <nav class="navigation">
                             <ul class="navigation__list">
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link">о нас</a>
+                                    <a href="" class="navigation__link" data-scroll="1">о нас</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link">бургеры</a>
+                                    <a href="" class="navigation__link" data-scroll="2">бургеры</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link">команда</a>
+                                    <a href="" class="navigation__link" data-scroll="3">команда</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link">меню</a>
+                                    <a href="" class="navigation__link" data-scroll="4">меню</a>
                                     </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link">отзывы</a>
+                                    <a href="" class="navigation__link" data-scroll="5">отзывы</a>
                                 </li>
                                 <li class="navigation__item">
-                                    <a href="#" class="navigation__link">контакты</a>
+                                    <a href="" class="navigation__link" data-scroll="7">контакты</a>
                                 </li>
                             </ul>
-                            <button class="button button_color_orange">заказать</button>
+                            <button class="button button_color_orange" data-scroll="6">заказать</button>
                             <div class="navigation__burger-menu-box">
                                 <div class="navigation__burger-menu">
                                     <div class="burger-menu__content"></div>
@@ -99,9 +99,11 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="arrow">
-                        <img src="img/welcome/arrow-scroll.svg" alt="arrow-scroll" class="arrow__img">
-                    </a>
+                    <div class="arrow__wrap">
+                        <a href="#" class="arrow__link" data-scroll="1">
+                            <img src="img/welcome/arrow-scroll.svg" alt="arrow-scroll" class="arrow__img">
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="section best">
@@ -586,6 +588,130 @@
                     
                       
             </section>
+            <section class="section team">
+                    <div class="team__box">
+                        <h2 class="section__title section__title--team">Команда</h2>
+                        <ul class="team__list">
+                            <li class="team__item">
+                                <a href="#" class="team__trigger">дэниэл рэдклиф</a>
+                                <div class="team__content-wrap">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="img/team/aphex.png" alt="" class="team__img">
+                                        </div>
+                                        <div class="team__text">
+                                            <div class="team__name">Оператор</div>
+                                            <div class="team__description">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="team__item team__item--activ">
+                                <a href="#" class="team__trigger">Ричард Джеймс</a>
+                                <div class="team__content-wrap">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="img/team/aphex.png" alt="" class="team__img">
+                                        </div>
+                                        <div class="team__text">
+                                            <div class="team__name">Оператор</div>
+                                            <div class="team__description">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__trigger">джейк финн</a>
+                                <div class="team__content-wrap">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="img/team/aphex.png" alt="" class="team__img">
+                                        </div>
+                                        <div class="team__text">
+                                            <div class="team__name">Оператор</div>
+                                            <div class="team__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque ullam vero voluptas. Maxime itaque non, saepe enim facere maiores qui delectus eos. Rerum molestias repellat unde. Voluptatem, illum nesciunt.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <a href="#" class="team__trigger">николай иванов</a>
+                                <div class="team__content-wrap">
+                                    <div class="team__content">
+                                        <div class="team__avatar">
+                                            <img src="img/team/aphex.png" alt="" class="team__img">
+                                        </div>
+                                        <div class="team__text">
+                                            <div class="team__name">Оператор</div>
+                                            <div class="team__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque ullam vero voluptas. Maxime itaque non, saepe enim facere maiores qui delectus eos. Rerum molestias repellat unde. Voluptatem, illum nesciunt.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+            <section class="section menu">
+                    <h2 class="section__title section__title--menu">Меню</h2>
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--active">
+                            <a href="#" class="menu__trigger menu__trigger--meat"> 
+                                <span class="menu__title">Для мясоедов</span>
+                            </a>
+                            <div class="menu__content">
+                                <div class="menu__text">
+                                    <div class="menu-acco__x">
+                                        <a href="" class="menu-acco__link">
+                                            <img src="img/menu/x.png" alt="x" class="menu-acco__img">
+                                        </a>
+                                    </div>
+                                    <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                                        однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                                        Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__trigger menu__trigger--vegan">
+                                <span class="menu__title">Вегетарианское</span>
+                            </a>
+                            <div class="menu__content">
+                                    <div class="menu__text">
+                                        <div class="menu-acco__x">
+                                            <a href="" class="menu-acco__link">
+                                                <img src="img/menu/x.png" alt="x" class="menu-acco__img">
+                                            </a>
+                                        </div>
+                                        <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                                            однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                                            Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                        </p>
+                                    </div>    
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__trigger menu__trigger--diet">
+                                <span class="menu__title">Диетическое</span>
+                            </a>
+                            <div class="menu__content">
+                                    <div class="menu__text">
+                                        <div class="menu-acco__x">
+                                            <a href="" class="menu-acco__link">
+                                                <img src="img/menu/x.png" alt="x" class="menu-acco__img">
+                                            </a>
+                                        </div>
+                                        <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
+                                            однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
+                                            Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                        </p>
+                                    </div>
+                            </div>
+                        </li>
+                    </ul>
+            </section> 
             <section class="section reviews">
                 <div class="rev-overlay" style="opacity: 0">
                     <div class="rev-overlay__content">
@@ -707,130 +833,6 @@
                     </li>
                 </ul>
             </section>
-            <section class="section team">
-                    <div class="team__box">
-                        <h2 class="section__title section__title--team">Команда</h2>
-                        <ul class="team__list">
-                            <li class="team__item">
-                                <a href="#" class="team__trigger">дэниэл рэдклиф</a>
-                                <div class="team__content-wrap">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="img/team/aphex.png" alt="" class="team__img">
-                                        </div>
-                                        <div class="team__text">
-                                            <div class="team__name">Оператор</div>
-                                            <div class="team__description">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li class="team__item team__item--activ">
-                                <a href="#" class="team__trigger">Ричард Джеймс</a>
-                                <div class="team__content-wrap">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="img/team/aphex.png" alt="" class="team__img">
-                                        </div>
-                                        <div class="team__text">
-                                            <div class="team__name">Оператор</div>
-                                            <div class="team__description">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
-                            <li class="team__item">
-                                <a href="#" class="team__trigger">джейк финн</a>
-                                <div class="team__content-wrap">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="img/team/aphex.png" alt="" class="team__img">
-                                        </div>
-                                        <div class="team__text">
-                                            <div class="team__name">Оператор</div>
-                                            <div class="team__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque ullam vero voluptas. Maxime itaque non, saepe enim facere maiores qui delectus eos. Rerum molestias repellat unde. Voluptatem, illum nesciunt.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="team__item">
-                                <a href="#" class="team__trigger">николай иванов</a>
-                                <div class="team__content-wrap">
-                                    <div class="team__content">
-                                        <div class="team__avatar">
-                                            <img src="img/team/aphex.png" alt="" class="team__img">
-                                        </div>
-                                        <div class="team__text">
-                                            <div class="team__name">Оператор</div>
-                                            <div class="team__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque ullam vero voluptas. Maxime itaque non, saepe enim facere maiores qui delectus eos. Rerum molestias repellat unde. Voluptatem, illum nesciunt.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-            </section>
-            <section class="section menu">
-                <h2 class="section__title section__title--menu">Меню</h2>
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--active">
-                        <a href="#" class="menu__trigger menu__trigger--meat"> 
-                            <span class="menu__title">Для мясоедов</span>
-                        </a>
-                        <div class="menu__content">
-                            <div class="menu__text">
-                                <div class="menu-acco__x">
-                                    <a href="" class="menu-acco__link">
-                                        <img src="img/menu/x.png" alt="x" class="menu-acco__img">
-                                    </a>
-                                </div>
-                                <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
-                                    однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
-                                    Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__trigger menu__trigger--vegan">
-                            <span class="menu__title">Вегетарианское</span>
-                        </a>
-                        <div class="menu__content">
-                                <div class="menu__text">
-                                    <div class="menu-acco__x">
-                                        <a href="" class="menu-acco__link">
-                                            <img src="img/menu/x.png" alt="x" class="menu-acco__img">
-                                        </a>
-                                    </div>
-                                    <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
-                                        однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
-                                        Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
-                                    </p>
-                                </div>    
-                        </div>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__trigger menu__trigger--diet">
-                            <span class="menu__title">Диетическое</span>
-                        </a>
-                        <div class="menu__content">
-                                <div class="menu__text">
-                                    <div class="menu-acco__x">
-                                        <a href="" class="menu-acco__link">
-                                            <img src="img/menu/x.png" alt="x" class="menu-acco__img">
-                                        </a>
-                                    </div>
-                                    <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову,
-                                        однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. 
-                                        Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
-                                    </p>
-                                </div>
-                        </div>
-                    </li>
-                </ul>
-            </section>           
             <section class="section order">
                     <div class="container">
                             <h2 class="section__title section__title-order">закажите доставку</h2>
@@ -902,78 +904,82 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>    
+                            
                     </div>
             </section>
             <section class="section map">
-                <footer class="footer">
-                    <div class="container">
-                        <div class="footer__content">
-                            <div class="footer__contacts">
-                                <address class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15
-                                    <br>
-                                </address>
-                                <a href="tel:+78123771377" class="footer__telephone">
-                                    <svg class="footer__telephone-svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#phone"></use>
-                                    </svg>
-                                    <span class="footer__telephone-number">+7 (812) 377-13-77</span>
-                                </a>
-                            </div>
-                            <div class="footer__socials">
-                                <a href="#" class="footer__socials-link">
-                                    <svg class="social__svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#vk"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="footer__socials-link">
-                                    <svg class="social__svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#fb"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="footer__socials-link">
-                                    <svg class="social__svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#inst"></use>
-                                    </svg>
-                                </a>
-                                <a href="#" class="footer__socials-link">
-                                    <svg class="social__svg">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer__content">
+                                <div class="footer__contacts">
+                                    <address class="footer__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+                                        <br>
+                                    </address>
+                                    <a href="tel:+78123771377" class="footer__telephone">
+                                        <svg class="footer__telephone-svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#phone"></use>
+                                        </svg>
+                                        <span class="footer__telephone-number">+7 (812) 377-13-77</span>
+                                    </a>
+                                </div>
+                                <div class="footer__socials">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg class="social__svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="footer__socials-link">
+                                        <svg class="social__svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="footer__socials-link">
+                                        <svg class="social__svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="footer__socials-link">
+                                        <svg class="social__svg">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </footer>
-            </section>
+                    </footer>
+            </section>    
         </div>      
             <ul class="asidebar__list">
-                <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                <li class="asidebar__item active">
+                    <a href="" class="asidebar__link" data-scroll="0"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="1"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="2"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="3"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="4"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="5"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="6"></a>
                 </li>
                 <li class="asidebar__item">
-                    <a href="#" class="asidebar__link"></a>
+                    <a href="" class="asidebar__link" data-scroll="7"></a>
                 </li>
             </ul>
-    </div> 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.3.6/mobile-detect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script> 
     <script src="index.js"></script>
+    <script src="ops.js"></script>
 </body>
 </html>

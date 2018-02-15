@@ -90,11 +90,3 @@ left.addEventListener("click", function() {
         }
         
     });
-
-    const qwer = document.querySelector('.menu__list');
-    const tem = document.querySelector('.menu__item');
-    qwer.addEventListener("click", function(event){
-        event.preventDefault();
-        tem.classList.remove('menu__item--active');  
-       
-    });
